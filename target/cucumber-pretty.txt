@@ -1,0 +1,12 @@
+Feature: Amazon Cart Test
+
+  Background: Open browser and go to the webpage [90m# steps.feature:4[0m
+    [32mGiven [0m[32mnavigate to amazon page[0m                [90m# Temporary.navigate_to_amazon_page()[0m
+
+  Scenario: Amazon cart addition test                    [90m# steps.feature:7[0m
+    [32mWhen [0m[32mI go to Camera,Photo & Video[0m                    [90m# Temporary.i_go_to_Camera_Photo_Video()[0m
+    [32mAnd [0m[32mGo to top rated products[0m                         [90m# Temporary.go_to_top_rated_products()[0m
+    [32mAnd [0m[32mAdd to cart third product five times[0m             [90m# Temporary.add_to_cart_third_product_five_times()[0m
+    [32mThen [0m[32mI remember total cost of order[0m                  [90m# Temporary.i_remember_total_cost_of_order()[0m
+    [32mAnd [0m[32mgo to cart page[0m                                  [90m# Temporary.go_to_cart_page()[0m
+    [32mAnd [0m[32mCompare total cost of product with value in cart[0m [90m# Temporary.compare_total_cost_of_product_with_value_in_cart()[0m

@@ -1,0 +1,115 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open browser and go to the webpage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8785553471,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to amazon page",
+            "match": {
+              "location": "Temporary.navigate_to_amazon_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Amazon cart addition test",
+        "description": "",
+        "id": "amazon-cart-test;amazon-cart-addition-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4585343274,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to Camera,Photo \u0026 Video",
+            "match": {
+              "location": "Temporary.i_go_to_Camera_Photo_Video()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1906842488,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Go to top rated products",
+            "match": {
+              "location": "Temporary.go_to_top_rated_products()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4554839252,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Add to cart third product five times",
+            "match": {
+              "location": "Temporary.add_to_cart_third_product_five_times()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3135269581,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I remember total cost of order",
+            "match": {
+              "location": "Temporary.i_remember_total_cost_of_order()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30371827,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "go to cart page",
+            "match": {
+              "location": "Temporary.go_to_cart_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1430877203,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Compare total cost of product with value in cart",
+            "match": {
+              "location": "Temporary.compare_total_cost_of_product_with_value_in_cart()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Cart Test",
+    "description": "",
+    "id": "amazon-cart-test",
+    "keyword": "Feature",
+    "uri": "steps.feature"
+  }
+]
