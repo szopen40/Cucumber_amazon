@@ -6,7 +6,7 @@ import pages.HomePage;
 
 public class StartPage {
 		public WebDriver driver;
-		public AbstractPage(WebDriver driver){
+		public StartPage(WebDriver driver){
 			this.driver = driver;
 		}
 		public HomePage goToHomePage(){
