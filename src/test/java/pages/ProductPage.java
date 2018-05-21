@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.FindBy;
 
 
-import utils.AbstractPage;
+import utils.StartPage;
 
 public class ProductPage extends StartPage {
 
