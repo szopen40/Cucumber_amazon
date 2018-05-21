@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.WebElement;
 
-import utils.AbstractPage;
+import utils.StartPage;
 
 public class SearchPage extends HomePage {
 
