@@ -2,22 +2,32 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.WebElement;
 
 import utils.AbstractPage;
 
-public class SearchPage extends AbstractPage {
+public class SearchPage extends HomePage {
 
 	public SearchPage(WebDriver driver) {
 		super(driver);
+		PageFactory.initElements(driver, this);
 	}
-
+	
+	@FindBy(linkText = "Top-Rated Digital Cameras")
+	private WebElement topRated;
+	
+	@FindBy(xpath = "//li[@id='result_2']//*[contains(@href,'www.amazon')]")
+	private WebElement thirdProduct;
+	
 	public SearchPage topRatedProducts(){
-		driver.findElement(By.linkText("Top-Rated Digital Cameras")).click();
+		topRated.click();
 		return new SearchPage(driver);
 	}
 	
 	public ProductPage selectThirdProduct(){
-		driver.findElement(By.xpath("//li[@id='result_2']//*[contains(@href,'www.amazon')]")).click();
+		thirdProduct.click();
 		return new ProductPage(driver);
 	}
 }
