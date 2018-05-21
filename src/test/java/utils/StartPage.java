@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 
 
-public class AbstractPage {
+public class StartPage {
 		public WebDriver driver;
 		public AbstractPage(WebDriver driver){
 			this.driver = driver;
