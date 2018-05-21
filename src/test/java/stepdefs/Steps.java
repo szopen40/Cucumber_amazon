@@ -46,7 +46,6 @@ public class Temporary {
 	@When("^Add to cart third product two times$")
 	public void add_to_cart_third_product_five_times() throws Throwable {
 		product = search.selectThirdProduct().selectQuantity();
-			//	.additionalAssurance();
 	}
 
 	@Then("^I remember total cost of order$")
